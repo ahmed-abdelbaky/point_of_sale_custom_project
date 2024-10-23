@@ -29,15 +29,15 @@ odoo.define('pos_custom_module.pos', function(require){
 //                        console.log("NO");
 //                }
 //                this.showPopup('OfflineErrorPopup',{
-//                title:'Offline Error',
-//                body:'Test',
+//                title: this.env._t('Offline Error'),
+//                body: this.env._t('Test'),
 //                })
                 const {confirmed, payload:selectedOption } = await this.showPopup('SelectionPopup', {
                 title: 'Are You JS Developer',
-                list: [{'id':0, 'label': 'Yes', 'item':'Yes'},
-                {'id':1, 'label': 'No', 'item':'No'}]
+                list: [{'id':0, 'label': this.env._t('Yes'), 'item':'Yes'},
+                {'id':1, 'label': this.env._t('No'), 'item':'No'}]
                 });
-                console.log("You are in Custom Button", selectedOption)
+                console.log("You are in Custom Button")
         }
 
 
