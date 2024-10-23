@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+        <templates >
+            <t t-name="customButtonTemplate" owl="1">
+                <div class="control-button">
+                        <i class="fa fa-smile-o " role="img" aria-label="Customer BTN" title="Customer BTN"/>
+                    Custom BTN
+                </div>
+            </t>
+        </templates>
