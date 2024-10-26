@@ -22,11 +22,18 @@ odoo.define('pos_custom_module.pos', function(require){
         route: '/pos/rpc/test',
         params: {},
         })
+        var multi_lang_test = []
         result.forEach(function(values){
-                console.log("kkkkkkkkkkk", values)
+                multi_lang_test.push({
+                'id':values.id, 'label': values.name, 'item':values})
+//                console.log("kkkkkkkkkkk", values)
 
         })
-//        console.log("kkkkkkkkkkk", result)
+        const {Confirmed, payload:selectedOption} =await this.showPopup('SelectionPopup', {
+        title: 'Select Your Language',
+        list: multi_lang_test,
+        })
+        console.log("kkkkkkkkkkk", selectedOption)
 //                this.showPopup('ErrorPopup',{
 //                title: 'Error',
 //                body: 'You are Not allow to use this button',
