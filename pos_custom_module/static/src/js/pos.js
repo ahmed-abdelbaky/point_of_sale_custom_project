@@ -13,16 +13,20 @@ odoo.define('pos_custom_module.pos', function(require){
 
         }
         async CustomBtnClick(){
+//        var result = await this.rpc({
+//                'model': 'res.lang',
+//                'method': 'search_read',
+//                'args':[[],['id', 'name', 'code']]
+//        })
         var result = await this.rpc({
-                'model': 'res.lang',
-                'method': 'search_read',
-                'args':[[],['id', 'name', 'code']]
+        route: '/pos/rpc/test',
+        params: {},
         })
         result.forEach(function(values){
                 console.log("kkkkkkkkkkk", values)
 
         })
-        console.log("kkkkkkkkkkk", result)
+//        console.log("kkkkkkkkkkk", result)
 //                this.showPopup('ErrorPopup',{
 //                title: 'Error',
 //                body: 'You are Not allow to use this button',
