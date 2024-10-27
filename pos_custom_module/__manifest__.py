@@ -12,8 +12,10 @@
         'point_of_sale.assets':[
             'pos_custom_module/static/src/js/pos.js',
             'pos_custom_module/static/src/js/config.js',
+            'pos_custom_module/static/src/js/clearBtn.js',
             'pos_custom_module/static/src/xml/template.xml',
             'pos_custom_module/static/src/xml/config.xml',
+            'pos_custom_module/static/src/xml/clearBtn.xml',
         ],
 
     },
