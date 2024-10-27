@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates  xml:space="preserve">
+    <t t-name="ClearButtonCustomTemplate" owl="1">
+        <div class="control-button">
+            <i class="fa fa-remove  " role="img" aria-label="Customer Clear BTN" title="Customer Clear BTN"/>
+            Clear All
+        </div>
+    </t>
+
+</templates>
