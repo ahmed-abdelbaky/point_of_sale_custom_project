@@ -4,7 +4,7 @@
     'data':[
         'views/pos_config.xml',
     ],
-    'depends':['point_of_sale'],
+    'depends':['point_of_sale', 'sale', 'base', 'mail', 'web'],
     'insatallable': True,
     'auto_install': False,
     'license': 'AGPL-3',
@@ -17,6 +17,10 @@
             'pos_custom_module/static/src/xml/config.xml',
             'pos_custom_module/static/src/xml/clearBtn.xml',
         ],
+        'web.assets_backend':[
+            'pos_custom_module/static/src/xml/sale_template.xml',
+
+        ]
 
     },
 }

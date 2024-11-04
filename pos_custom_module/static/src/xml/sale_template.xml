@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates>
+    <t t-inherit="web.ListView.Buttons" t-inherit-mode="extension" >
+        <xpath expr="//t[@t-if='nbSelected']" position="inside">
+            <button type="button" t-if="model.root.resModel == 'sale.order'" class="btn btn-primary" id="select_all_sales" >
+                <span>Edit all Selection Sales</span>
+            </button>
+        </xpath>
+    </t>
+</templates>
